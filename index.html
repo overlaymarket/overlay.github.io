@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay</title>
+    <!-- css links -->
+    <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "timeline.css"/>
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="roadmap.js"></script>
+
+  </head>
+
+  <!-- HEADER -->
+
+  <body onscroll="navStick()">
+    <div class="buffer4"></div>
+    <div class="header">
+      <img id="logo.01" src="assets/images/overlay-logo-02.png" alt="Overlay">
+    </div>
+
+    
+
+  <!-- *********************** -->
+  <!-- BODY -->
+  <!-- *********************** -->
+
+  
+
+    <div onclick="dropDownFunc()" id="menuMobile" class="droptab">
+      <a href="#" onclick="dropDownFunc()">
+        <img src="assets/images/menu.png" id="mobileMenuDropdown">
+      </a>
+      <div id="mobile-menu-content" class="dropdown-content">
+        <a href="about.html">About</a>
+        <a href="whitepaper.html">White Paper</a>
+        <a href="technicalpaper.html">Technical Paper</a>
+        <a href="faq.html">FAQ</a>
+        <a href="governance.html">Governance</a>
+        <a href="#jumptoteam">Team</a>
+      </div>
+    </div>
+  
+
+  <!-- MENU -->
+  <div class="row"></div>
+  <div class="buffer8"></div>
+    
+
+    <nav id="navbar">
+        <ul class="menu-ul">
+          <li>
+            <a href="about.html">About</a>  
+          </li>
+          <li class="drop-down-menu">
+            <a href="#" onclick="return false;">Resources</a>
+            <div class="dropdown-con-menu">
+              <a href="whitepaper.html">White Paper</a>
+              <a href="technicalpaper.html">Technical Paper</a>
+              <a href="faq.html">FAQ</a>
+              <a href="governance.html">Governance</a>
+            </div>
+          </li>
+        
+          <li>
+            <a href="#jumptoteam">Team</a>
+          </li>
+        </ul>
+    </nav>
+
+
+    <script>
+      var navbar = document.getElementById("navbar");
+      var smlogo = document.getElementById("small-logo");
+      var sticky = navbar.offsetTop;
+      
+      function navStick() {
+        if (window.scrollY >= sticky) {
+          navbar.classList.add("sticky"), smlogo.style.visibility = "visible"
+        } else {
+          navbar.classList.remove("sticky"), smlogo.style.visibility = "hidden"
+        }
+      }
+    </script>
+
+
+    <!-- *********************** -->
+    <!-- FIRST HORIZONTAL BREAK -->
+    <!-- *********************** -->
+
+<div class="content">
+
+
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6" id="main-top-whatis">
+        <p>
+         Overlay is the first ever <i>universal trading machine</i>, <br>made possible by blockchain technology.
+        </p>
+        <div class="buffer4"></div>
+        <a href="whitepaper.html">
+          <h4>
+            Read the Whitepaper
+          </h4>
+        </a>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <div class="buffer4"></div>
+
+    <div class="row block" id="first-block">
+      
+      <div class="col-2"></div>
+      <div class="col-5">
+        <h4>Welcome to</h4> <h2>The Continuous <br>Virtual Market</h2>
+        <p>
+        Overlay iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+        <p> Iste natus error sit voluptatem accusantium <b>doloremque laudantium, totam rem aperiam, </b> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. </p>
+        <p>Sed ut perspiciatis <b> unde omnis iste natus error sit </b> voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <b>Nothing like this has ever existed before.</b>
+        </p>
+        <p>
+        Overlay iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+
+
+       
+      </div>
+      <div class="col-5"></div>
+      
+      
+    </div>
+
+
+
+    <div class="buffer8"></div>
+
+    
+    <!-- *********************** -->
+    <!-- VIDEO -->
+    <!-- *********************** -->
+
+    <div class="row block">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/gSwvH6YhqIM" frameborder="0" allowfullscreen></iframe>-->
+        <img id="play-icon" src="assets/images/play-icon.02.png">
+      </div>
+      <div class="col-2"></div> 
+    </div>
+
+    <div class="buffer8"></div>
+
+
+    <div class="block" id="team-block">
+    <div class="row use-case">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <ul>
+          <li id="content_list">
+            
+            <h3>BUY/SELL ANYTHING<sup>*</sup></h3>
+            
+            <p id="panel">Iste natus error sit voluptatem accusantium <b>doloremque laudantium, totam rem aperiam, </b> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. </p>
+          </li>
+          
+          <li id="content_list">
+            <h3>LONG/SHORT SYMMETRY</h3>
+            <p id="panel">Iste natus error sit voluptatem accusantium <b>doloremque laudantium, totam rem aperiam, </b> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. </p>
+          </li>
+
+          <li id="content_list">
+           <h3>NO MARKET IMPACT</h3>
+        <p id="panel">Iste natus error sit voluptatem accusantium <b>doloremque laudantium, totam rem aperiam, </b> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. </p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-1"></div>
+      
+    </div>
+
+  </div>
+
+
+
+
+    <!-- *********************** -->
+    <!-- THIRD HORIZONTAL BREAK -->
+    <!-- *********************** -->
+
+    <div class="buffer8"></div>
+    <div class="row block" id="third-block">
+      
+      <div class="col-2"></div>
+      <div class="col-4">
+        <h2>Some Heading</h2>
+        <p>
+        Overlay iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+        <p> Iste natus error sit voluptatem accusantium <b>doloremque laudantium, totam rem aperiam, </b> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. </p>
+        <h3>Some Heading</h3>
+        <p>Sed ut perspiciatis <b> unde omnis iste natus error sit </b> voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <b>Nothing like this has ever existed before.</b>
+        </p>
+        <p>
+        Overlay iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. </p>
+        <h3>Some Heading</h3>
+        <p> Iste natus error sit voluptatem accusantium <b>doloremque laudantium, totam rem aperiam, </b> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni. </p>
+        <p>Sed ut perspiciatis <b> unde omnis iste natus error sit </b> voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+        </p>
+      </div>
+      <div class="col-6"></div>
+      
+      
+    </div>
+   
+    <!-- *********************** --> 
+    <!-- MARKETPLACE -->
+    <!-- *********************** -->
+    
+    <div class="row" id="marketplace-block">
+      <div class="buffer4"></div>
+      <div class="col-4"></div>
+      <div class="col-4">
+        <h2 id="mrkt_u">Marketplace</h2>
+        <p>The Marketplace is voluptatem accusantium doloremque laudantium, totam rem aperiam. We are currently in process of building this. Get <a href="#">email</a> updates.</p>
+      </div>
+      <div class="col-4"></div>
+    </div>
+    <div class="buffer4"></div>
+    
+
+    <!-- *********************** --> 
+    <!-- ROADMAP -->
+    <!-- *********************** -->
+    
+  
+      <div id="roadmap-block">
+        <div class="row">
+          <div class="col-1"></div>
+            <div class="col-10" id="roadmapContainer">
+              <h2 id="rdmp_u">Roadmap</h2>
+              <div class="timeline">
+                
+                <div class="circle-container">
+                  <div class="timeline-circle" id="circle-color-1" onmouseover="showRoadmapInfo()"></div>
+                  <div class="timeline-circle" id="circle-color-2"></div>
+                  <div class="timeline-circle" id="circle-color-3"></div>
+                  <!--<div class="vertical-timeline-seperate"></div>-->
+                  <div class="timeline-circle" id="circle-color-4"></div>
+                  <div class="timeline-circle" id="circle-color-5"></div>
+                  <div class="timeline-circle" id="circle-color-6"></div>
+                  <div class="timeline-circle" id="circle-color-7"></div>
+                  <div class="timeline-circle" id="circle-color-8"></div>
+                  <div class="timeline-circle" id="circle-color-9"></div>
+                  <div class="timeline-circle" id="circle-color-10"></div>
+                  <div class="timeline-circle" id="circle-color-11"></div>
+                  <div class="timeline-circle" id="circle-color-12"></div>
+                  <div class="timeline-circle" id="circle-color-13"></div>
+                  <div class="timeline-circle" id="circle-color-14"></div>
+                  <div class="timeline-circle" id="circle-color-15"></div>
+                </div>
+
+                
+                  <div class="container-timeline">
+                    <div class="content-timeline">
+                      <h3>Q3</h3>
+                      <h4>Initial Concept</h4>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+    
+    <!-- *********************** -->
+
+    <div id="jumptoteam"></div>
+    <div class="buffer8"></div>
+
+    <!-- *********************** --> 
+    <!-- TEAM -->
+    <!-- *********************** -->
+
+
+    <div class="buffer8"></div>
+    <div class="block" id="team-block">
+      <div class="row">
+        <h2 id="team_u">Team</h2>
+        <div class="col-1"></div>
+        <div class="col-10">
+          <ul>
+            <li id="content_list">
+              <div class="team-img akay"></div>
+              <p class="team-name">ADAM KAY</p>
+              <p>ceo + founder</p>
+              <p id="panel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </li>
+
+            <li id="content_list">
+              <div class="team-img jkerk"></div>
+              <p class="team-name">JEFF KIRKWOOD</p>
+              <p>theory + governance</p>
+              <p id="panel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </li>
+
+            <li id="content_list">
+               <div class="team-img wkay"></div>
+              <p class="team-name">WESLEY KAY</p>
+              <p>design</p>
+              <p id="panel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </li>
+
+        
+
+            
+          </ul>
+        </div>
+        <div class="col-1"></div>
+        
+      </div>
+
+    </div>
+
+    <div class="buffer8"></div>
+    <div class="block" id="team-block">
+      <div class="row">
+        <h2 id="ad_u">Advisors</h2>
+        <div class="col-1"></div>
+        <div class="col-10">
+          <ul>
+            <li id="content_list">
+              <div class="team-img dhubb"></div>
+              <p class="team-name">DAPPHUB</p>
+              <p>engineering and architecture</p>
+              <p id="panel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </li>
+
+            <li id="content_list">
+              <div class="team-img jkerk"></div>
+              <p class="team-name">NAME NAME</p>
+              <p>theory + governance</p>
+              <p id="panel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </li>
+
+            <li id="content_list">
+              <div class="team-img jkerk"></div>
+              <p class="team-name">NAME NAME</p>
+              <p>theory + governance</p>
+              <p id="panel">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+            </li>
+          
+          </ul>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        
+      </div>
+      <div class="col-2"></div>
+      
+    </div>
+
+    <!-- *********************** --> 
+    <!-- FOOTER -->
+    <!-- *********************** -->
+
+
+    <div class="row footer">
+      
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+        <div class="col-4">
+          <p>Overlay Foundation</p>
+          <a href="#">Privacy Policy |</a>
+          <a href="#">Terms of Use</a>
+          <p>Copyright &copy2017 Overlay Foundation. All Rights Reserved. </p>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+      
+    </div>
+<!-- close .content div-->
+  </div> 
+  </body>
+
+
+</html>
