@@ -41,6 +41,10 @@
     margin-top: 50px;
 }
 
+.text_center{
+  text-align: center;
+}
+
 ul {
   list-style: none;
   padding: 0px;
@@ -76,10 +80,10 @@ li > p{
 }
 
 .header img{
-    width: 30%;
+    width: 10%;
     align-self: center;
-    margin-left: 35%;
-    margin-top: 11%;
+    margin-left: 45%;
+    margin-top: 8%;
   }
 }
 
@@ -89,18 +93,20 @@ li > p{
 
 
 #main-top-whatis p{
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
-  line-height: 160%;
+  line-height: 140%;
+  font-family: Dosis;
 }
 
-#main-top-whatis h4{
+#main-top-whatis a p{
   text-align: center;
-  border: 2px solid rgba(200,200,200,.5);
-  border-radius: 5px;
+  border-radius: 20px;
   width: 40%;
   margin: auto;
   padding: 7px;
+  color: white;
+  background-color: cornflowerblue;
 }
 
 #main-top-whatis h4:hover {
@@ -108,8 +114,20 @@ li > p{
   color: teal;
 }
 
+.button p{
+  text-align: center;
+  border-radius: 20px;
+  width: 40%;
+  margin: auto;
+  padding: 7px;
+  color: white;
+  background-color: cornflowerblue;
+}
 
-
+.button p:hover {
+  background-color: #f1f1f1;
+  color: teal;
+}
 
 /* ---------- */
 /*  MENU SETUP */
@@ -140,12 +158,10 @@ nav{
 }
 
 #navbar{
-  height: 50px;
-  position: fixed;  
+  height: 100px;
+  position: inherit;  
   width: 100%;
   top: 0;
-  background-color: rgba(255,255,255,0.8);
-  -webkit-backdrop-filter: blur(5px);
   z-index: 999;
 }
 
@@ -155,7 +171,7 @@ nav{
 }
 
 nav ul {
-    margin: 0px 0px 0px 0px;
+    margin: 20px 20px 0px 0px;
     padding: 0;
     display:inline-block;
     list-style: none;
@@ -170,7 +186,7 @@ nav li {
 nav li a {
     display: block;
     padding: 10px 40px;
-    font-size: 24px;  
+    font-size: 20px;  
     font-weight: 100;
     text-decoration: none;
 }
@@ -178,7 +194,7 @@ nav li a {
 nav li p{
     display: block;
     padding: 10px 40px 5px;
-    font-size: 22px;  
+    font-size: 18px;  
     font-weight: 100;
     text-decoration: none;
 }
@@ -199,7 +215,7 @@ nav li a:hover {
     min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.4);
     -webkit-backdrop-filter: blur(5px);
 }
 
@@ -222,7 +238,7 @@ nav li a:hover {
   height: 40px;
   right: 0;
   border-radius: 0 0 0 10px; 
-  background-color:rgba(200,200,200,.8);
+  background-color:rgba(200,200,200,.4);
   color: #FFFFFF;
   z-index:999;
   -webkit-backdrop-filter: blur(5px);
@@ -468,7 +484,7 @@ body {
 
 a{
   color: black;
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
 }
 
@@ -478,39 +494,39 @@ a:active{
 
 p {
   margin: 10px 0px 15px;
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
-  font-size: 16px;
+  font-family: Roboto,-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 h1{
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 50px;
   font-weight: 300;
   text-align: center;
 }
 
 h2{
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 40px;
     font-weight: normal;
 }
 
 h3{
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
-  font-size: 30px;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 35px;
   font-weight: normal;  
 }
 
 h4{
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
-  font-size: 20px;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
   font-weight: normal;  
 }
 
 h5{
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
-  font-size: 18px;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
   font-weight: normal;  
 }
 
@@ -522,7 +538,7 @@ h5{
 
 .large_links{
   font-size: 20px;
-  font-family: 'Source Sans Pro',Helvetica,arial,sans-serif;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-align: center;
 }
 
@@ -570,14 +586,81 @@ h5{
   text-align: center;
 }
 
+.circle_background{
+    border-radius: 50%;
+    width: 1300px;
+    height: 1300px;
+    opacity: 0.4;
+    position: absolute;
+    margin-left: -92%;
+    margin-top: -24%;
+}
 
+#circle_01{
+  background-color: slateblue;
+}
 
+#circle_02{
+  background-color: tomato;
+  width: 800px;
+  height: 800px;
+  margin-left: 1%;
+  margin-top: inherit;
+  opacity: .2;
+}
 
+#circle_03{
+    background-color: darkseagreen;
+    width: 400px;
+    height: 400px;
+    margin-left: 2%;
+    opacity: .2;
+}
 
+#circle_adam{
+    background-color: darkseagreen;
+    width: 200px;
+    height: 200px;
+    margin-left: 2%;
+    margin-top: -30%;
+    opacity: .4;
+}
 
+#circle_erin{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin-left: 15%;
+    margin-top: -20%;
+    opacity: .4;
+}
 
+#circle_ian{
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    margin-top: -40%;
+    opacity: .4;
+}
 
+#circle_wes{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin-left: 50%;
+    margin-top: -10%;
+    opacity: .4;
+}
 
+#circle_dapphub{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin-left: 8%;
+    margin-top: -4%;
+    opacity: .4;
+}
 
 
 
@@ -634,12 +717,24 @@ h5{
   background-image: url("http://images8.design-editor.com/93/9388036/3958/EDD386E7-990F-E90D-0B70-65C06DB333F5.svg");
 }
 
+.artboard22{
+  background-image: url("assets/images/Artboard22.png");
+}
+
+.artboard23{
+  background-image: url("assets/images/Artboard23.png");
+}
+
+.artboard24{
+  background-image: url("assets/images/Artboard24.png");
+}
+
 .team-name{
   text-align: center;
-  font-family: 'Dosis',Helvetica,arial,sans-serif;
+  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   margin: 0px; 
-  padding-top: 10px;
+  padding: 30px 0px 20px 0px;
 }
 
 .team p{
@@ -668,12 +763,13 @@ h5{
 /* ---------- */
 
 .footer{
-  margin-top: 180px;
-  background-color:rgba(200,200,200,0.1);
+  
+  background-color:rgba(20,20,20,.4);
   text-align: center;
+  height: 500px;
 }
 
 .footer p{
-
+  color: rgb(200,200,200);
 }
 
