@@ -10,6 +10,7 @@
 }
 
 
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -85,7 +86,6 @@ li > p{
     margin-left: 45%;
     margin-top: 8%;
   }
-}
 
 #logo {
   font-family: 'Dosis',Helvetica,arial,sans-serif;
@@ -96,7 +96,7 @@ li > p{
   font-size: 20px;
   text-align: center;
   line-height: 140%;
-  font-family: Dosis;
+  font-family: Open Sans;
 }
 
 #main-top-whatis a p{
@@ -186,7 +186,7 @@ nav li {
 nav li a {
     display: block;
     padding: 10px 40px;
-    font-size: 20px;  
+    font-size: 16px;  
     font-weight: 100;
     text-decoration: none;
 }
@@ -194,7 +194,7 @@ nav li a {
 nav li p{
     display: block;
     padding: 10px 40px 5px;
-    font-size: 18px;  
+    font-size: 16px;  
     font-weight: 100;
     text-decoration: none;
 }
@@ -297,7 +297,7 @@ nav li a:hover {
 
 body {
   background-color: #ffffff;
-  background-image: url("assets/images/overlay-background.03.jpg");
+  background-image: url("assets/images/body-background.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -307,7 +307,7 @@ body {
   background-position: center 12%;
   position: absolute;
   margin: 0px;
-}
+} 
 
 
 
@@ -381,17 +381,19 @@ body {
 }
 
 
-/* TEAM LIST */
+/* TEAM LIST 
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 768px) {
   #content_list {
     float: left;  
     width: 33%;
+    text-align: center;
      
   }
   #panel {
     text-align: left;
     width: 70%;
+    text-align: center;
   }
   
 
@@ -405,7 +407,7 @@ body {
     display: none !important;
   }
 }
-
+*/
 /* MENU*/
 
 @media only screen and (min-width: 767px){
@@ -484,7 +486,7 @@ body {
 
 a{
   color: black;
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-decoration: none;
 }
 
@@ -494,39 +496,34 @@ a:active{
 
 p {
   margin: 10px 0px 15px;
-  font-family: Roboto,-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
 }
 
 h1{
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 50px;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
 h2{
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 40px;
-    font-weight: normal;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: light;
 }
 
 h3{
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 35px;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;  
 }
 
 h4{
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 24px;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;  
 }
 
 h5{
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 20px;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;  
 }
 
@@ -538,7 +535,7 @@ h5{
 
 .large_links{
   font-size: 20px;
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   text-align: center;
 }
 
@@ -547,9 +544,77 @@ h5{
   text-align: center; 
 }
 
+#test ul{
+  list-style: none;
+  padding: 0;
+  margin: auto 0;
+}
+
+#test-cases ul li{
+float: left;
+list-style: none;
+width: 33%;
+padding: 0.5em 1em;
+text-align: center;
+margin-bottom: 40px;
+}
+
+#test-cases ul li p{
+  text-align: center;
+  width: 70%;
+  margin-left: 14%;
+}
+
+.use_cases img{
+  max-width: 180px;
+}
+
+#test-cases img{
+  max-width: 200px;
+  padding: 0px;
+}
+
+
+#roadmap-table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table tr th {
+ padding: 0px 15px 0px 15px;
+}
+
+.timeline-bubble{
+  background-color: white;
+  border: 1px solid  #BD10E0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+}
+
+.timeline-bubble:hover{
+  background-color: #BD10E0;
+  border: 1px solid  #BD10E0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+}
+
+#time-text1{
+  display: none;
+  position: absolute;
+}
+
+#tb-1:hover #time-text1{
+  display: block;
+}
 
 
 
+
+.roadmap-list{
+  text-align: center;
+}
 
 
 
@@ -557,65 +622,46 @@ h5{
 /* BLOCKS */
 /* ---------- */
 
-.block h2, p{
-  color: #364b67;
+
+
+.block_exp_1 img{
+  max-width: 260px;
 }
 
-#first-block{
-  background-color:rgba(184,230,218,0.4);
-  /*background-image: url("assets/images/white-circle-overlay-graphic-test02.png");
-  background-size: cover;
-  background-position-y: center;*/
-
+.block_exp_1 h3{
+  margin: 0;
+  padding-top: 30px;
 }
 
-#second-block{
- background-color:rgba(24,31,90,.2);
- padding:20px 0px 24px 0px;
-
+.block_future{
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 -4px 18px 0 rgba(74, 140, 220, 0.4), 0 10px 16px 0 rgba(74, 140, 220, 0.4);
 }
 
-#third-block{
-  padding-top: 4%;
-  padding-bottom: 8%;
-  background-color:rgba(0,20,250,0.1);
+.block_future img{
+  max-width: 400px;
+  padding-left: 60px;
+}
+
+.block_future h1{
+  color: white;
+  padding-top: 60px;
+}
+
+.block_future h3{
+  color: white;
+  font-weight: 600;
+  padding-top: 14px;
+}
+
+.block_future p{
+  color: white;
 }
 
 
-#marketplace-block{
-  text-align: center;
-}
 
-.circle_background{
-    border-radius: 50%;
-    width: 1300px;
-    height: 1300px;
-    opacity: 0.4;
-    position: absolute;
-    margin-left: -92%;
-    margin-top: -24%;
-}
 
-#circle_01{
-  background-color: slateblue;
-}
-
-#circle_02{
-  background-color: tomato;
-  width: 800px;
-  height: 800px;
-  margin-left: 1%;
-  margin-top: inherit;
-  opacity: .2;
-}
-
-#circle_03{
-    background-color: darkseagreen;
-    width: 400px;
-    height: 400px;
-    margin-left: 2%;
-    opacity: .2;
-}
+/* -------------- */
 
 #circle_adam{
     background-color: darkseagreen;
@@ -667,92 +713,13 @@ h5{
 
 
 
-
-
-
-
-
-/* ---------- */
-/* TEAM */
-/* ---------- */
-
-.team{
-  margin-bottom: 40px;
+.sign_up{
+  background-color: #76CBFF;
+  min-height: 300px;
 }
-
-#team-block h2{
-  text-align: center;
-  margin-top: 30px;  
+.sign_up h3{
+  color: white;
 }
-
-#team-block h3{
-  text-align: center;
-
-}
-
-.team-img{
-    border-radius: 50%; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 125px;
-    width: 125px;
-    margin: auto;
-    padding: 10px; 
-
-}
-
-.akay{
-  background-image: url("assets/images/team/01overlay.jpg");
-}
-
-.wkay{
-  background-image: url("assets/images/team/01_overlay.jpg");
-}
-
-.jkerk{
-  background-image: url("assets/images/team/02static.jpg");
-}
-
-.dhubb{
-  background-image: url("http://images8.design-editor.com/93/9388036/3958/EDD386E7-990F-E90D-0B70-65C06DB333F5.svg");
-}
-
-.artboard22{
-  background-image: url("assets/images/Artboard22.png");
-}
-
-.artboard23{
-  background-image: url("assets/images/Artboard23.png");
-}
-
-.artboard24{
-  background-image: url("assets/images/Artboard24.png");
-}
-
-.team-name{
-  text-align: center;
-  font-family: "Dosis",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px;
-  margin: 0px; 
-  padding: 30px 0px 20px 0px;
-}
-
-.team p{
-  text-align: center;
-}
-
-#panel {
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
-}
-
-
-
-
-
-
-
 
 
 
@@ -763,13 +730,16 @@ h5{
 /* ---------- */
 
 .footer{
-  
-  background-color:rgba(20,20,20,.4);
-  text-align: center;
-  height: 500px;
+  background-color:#000000;
+  font-size: 14px;
+  height: 300px;
+  padding-top: 80px;
 }
 
 .footer p{
   color: rgb(200,200,200);
 }
 
+.footer a{
+  color: rgb(200,200,200);
+}
