@@ -58,17 +58,28 @@ li > p{
 
 
 .buffer4{
-  margin-top: 4%
+  margin-top: 4%;
+}
+
+.buffer6{
+  margin-top: 6%;
 }
 
 .buffer8{
-  margin-top: 8%
+  margin-top: 8%;
+}
+
+.buffer12{
+  margin-top: 12%;
 }
 
 .buffer16{
-  margin-top: 16%
+  margin-top: 16%;
 }
 
+.margin-bottom-60{
+  margin-bottom: 60px;
+}
 
 
 /* ---------- */
@@ -204,6 +215,21 @@ nav li a:hover {
     color: teal;
 }
 
+button{
+  border-radius: 100px;
+  background-color: #76CBFF;
+  border: none;
+  text-align: center;
+  width: 300px;
+  height: 44px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+button a{
+  color: white;
+  margin: auto;
+  text-align: center;
+}
 
 /*  MAIN MENU DROPDOWN */
 
@@ -600,14 +626,17 @@ table tr th {
   border-radius: 100px;
 }
 
-#time-text1{
+.timeline-bubble > div{
   display: none;
+  position: absolute;
+  margin: 30px 0px 0px -20px;
+}
+  
+.timeline-bubble:hover > div{
+  display: block;
   position: absolute;
 }
 
-#tb-1:hover #time-text1{
-  display: block;
-}
 
 
 
@@ -625,12 +654,17 @@ table tr th {
 
 
 .block_exp_1 img{
-  max-width: 260px;
+  max-width: 320px;
 }
 
 .block_exp_1 h3{
   margin: 0;
-  padding-top: 30px;
+  padding-top: 80px;
+}
+
+
+.block_exp_1 .col-4{
+  text-align: center;
 }
 
 .block_future{
@@ -641,6 +675,7 @@ table tr th {
 .block_future img{
   max-width: 400px;
   padding-left: 60px;
+  margin-top: 60px;
 }
 
 .block_future h1{
